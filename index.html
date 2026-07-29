@@ -3,36 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Kodi</title>
+    <title>My Kodi Repository</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px; background-color: #f4f4f4; }
-        .container { max-width: 800px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h1 { border-bottom: 2px solid #007bff; padding-bottom: 10px; color: #333; }
-        ul { list-style-type: none; padding: 0; }
-        li { margin: 15px 0; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        a { text-decoration: none; color: #007bff; font-size: 18px; font-weight: bold; }
-        a:hover { text-decoration: underline; color: #0056b3; }
-        .file-icon { margin-right: 10px; font-size: 20px; }
-        .note { color: #666; font-size: 14px; margin-top: 5px; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 20px; 
+            background-color: #f4f4f4; 
+            color: #333;
+            line-height: 1.6;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: white; 
+            padding: 24px; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08); 
+        }
+        h1 { 
+            border-bottom: 2px solid #007bff; 
+            padding-bottom: 10px; 
+            color: #1a1a1a; 
+            margin-top: 0;
+        }
+        .instructions {
+            background-color: #eef6ff;
+            border-left: 4px solid #007bff;
+            padding: 15px 20px;
+            border-radius: 4px;
+            margin-bottom: 25px;
+        }
+        .instructions h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #0056b3;
+        }
+        .instructions ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .instructions li {
+            margin-bottom: 6px;
+        }
+        .instructions code {
+            background-color: #e1ecf4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.95em;
+            color: #0c5460;
+        }
+        ul { 
+            list-style-type: none; 
+            padding: 0; 
+            margin: 0;
+        }
+        li.file-item { 
+            display: flex;
+            align-items: center;
+            margin: 10px 0; 
+            border-bottom: 1px solid #eee; 
+            padding-bottom: 12px; 
+        }
+        a { 
+            text-decoration: none; 
+            color: #007bff; 
+            font-size: 16px; 
+            font-weight: 600; 
+            word-break: break-all;
+        }
+        a:hover { 
+            text-decoration: underline; 
+            color: #0056b3; 
+        }
+        .file-icon { 
+            margin-right: 12px; 
+            font-size: 20px; 
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>My Kodi Files</h1>
-    <p>Kodi Setting -> File Manager -> Add Source -> https://https://sek777.github.io/kodi/</p>
-    <p>Goto Addons "Install from Zip File" Select zip from Source.</p>
+    <h1>📦 My Kodi Files</h1>
+    
+    <div class="instructions">
+        <h3>💡 How to Install via Kodi</h3>
+        <ol>
+            <li>Go to <strong>Settings</strong> ➔ <strong>File Manager</strong> ➔ <strong>Add source</strong></li>
+            <li>Enter the URL: <code>https://sek777.github.io/kodi/</code></li>
+            <li>Go back to <strong>Add-ons</strong> ➔ Select <strong>Install from zip file</strong> ➔ Choose the added source</li>
+        </ol>
+    </div>
 
     <ul>
-         <li>
+        <li class="file-item">
             <span class="file-icon">📦</span>
             <a href="script.thai.font.changer-2.5.0.zip">script.thai.font.changer-2.5.0.zip</a>
         </li>
-        <li>
+        <li class="file-item">
             <span class="file-icon">📦</span>
             <a href="repository.embycon.zip">repository.embycon.zip</a>
         </li>
-        <li>
+        <li class="file-item">
             <span class="file-icon">📦</span>
             <a href="repository.embuary-1.0.1.zip">repository.embuary-1.0.1.zip</a>
         </li>
