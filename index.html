@@ -60,25 +60,42 @@
         }
         li.file-item { 
             display: flex;
-            align-items: center;
-            margin: 10px 0; 
+            align-items: flex-start;
+            margin: 15px 0; 
             border-bottom: 1px solid #eee; 
-            padding-bottom: 12px; 
-        }
-        a { 
-            text-decoration: none; 
-            color: #007bff; 
-            font-size: 16px; 
-            font-weight: 600; 
-            word-break: break-all;
-        }
-        a:hover { 
-            text-decoration: underline; 
-            color: #0056b3; 
+            padding-bottom: 15px; 
         }
         .file-icon { 
             margin-right: 12px; 
-            font-size: 20px; 
+            font-size: 22px; 
+            line-height: 1.2;
+        }
+        .file-details {
+            flex: 1;
+        }
+        a.file-name { 
+            text-decoration: none; 
+            color: #007bff; 
+            font-size: 17px; 
+            font-weight: 600; 
+            word-break: break-all;
+            display: inline-block;
+            margin-bottom: 4px;
+        }
+        a.file-name:hover { 
+            text-decoration: underline; 
+            color: #0056b3; 
+        }
+        .file-desc {
+            color: #555;
+            font-size: 14px;
+            margin: 0;
+        }
+        .file-note {
+            color: #888;
+            font-size: 13px;
+            margin-top: 4px;
+            font-style: italic;
         }
     </style>
 </head>
@@ -97,17 +114,32 @@
     </div>
 
     <ul>
+        <!-- Thai Font Changer -->
         <li class="file-item">
             <span class="file-icon">📦</span>
-            <a href="script.thai.font.changer-2.5.0.zip">script.thai.font.changer-2.5.0.zip</a>
+            <div class="file-details">
+                <a href="script.thai.font.changer-2.5.0.zip" class="file-name">script.thai.font.changer-2.5.0.zip</a>
+                <p class="file-desc">Adds Thai font support to Kodi. Once installed, the system will switch to the Arial font.</p>
+                <p class="file-note">Note: If the font changes unexpectedly in the future, please manually set it back to Arial in Kodi settings.</p>
+            </div>
         </li>
+
+        <!-- EmbyCon Repository -->
         <li class="file-item">
             <span class="file-icon">📦</span>
-            <a href="repository.embycon.zip">repository.embycon.zip</a>
+            <div class="file-details">
+                <a href="repository.embycon.zip" class="file-name">repository.embycon.zip</a>
+                <p class="file-desc">An add-on repository for integrating and using Emby media server with Kodi.</p>
+            </div>
         </li>
+
+        <!-- Embuary Skin Repository -->
         <li class="file-item">
             <span class="file-icon">📦</span>
-            <a href="repository.embuary-1.0.1.zip">repository.embuary-1.0.1.zip</a>
+            <div class="file-details">
+                <a href="repository.embuary-1.0.1.zip" class="file-name">repository.embuary-1.0.1.zip</a>
+                <p class="file-desc">A custom skin repository designed to enhance the visual interface and user experience for Emby.</p>
+            </div>
         </li>
     </ul>
 </div>
